@@ -1,7 +1,9 @@
-#videolib
+# videolib
 
-#####Client application for video rental management.
+##### Client application for video rental management.
 
+
+&nbsp;
 
 Technology stack
 ---
