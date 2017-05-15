@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.tab.MoviesController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="700.0">
+         <children>
+				<Label layoutX="22.0" layoutY="22.0" text="Title" />
+		        <TextField fx:id="title" layoutX="22.0" layoutY="45.0" prefHeight="25.0" prefWidth="120.0" />
+		        <Label fx:id="message" layoutX="22.0" layoutY="79.0" textFill="RED" />
+		         
+		        <Label layoutX="167.0" layoutY="22.0" text="Director" />
+		        <TextField fx:id="director" layoutX="167.0" layoutY="45.0" prefHeight="25.0" prefWidth="120.0" />
+		         
+		        <Label layoutX="312.0" layoutY="22.0" text="Year" />
+		        <TextField fx:id="year" layoutX="312.0" layoutY="45.0" prefHeight="25.0" prefWidth="120.0" />
+				 
+		        <Button fx:id="addMovie" layoutX="473.0" layoutY="45.0" mnemonicParsing="false" onAction="#addMovie" prefHeight="25.0" prefWidth="100.0" text="Add Movie" />
+		        <Button fx:id="showMovies" layoutX="580.0" layoutY="45.0" mnemonicParsing="false" onAction="#showMovies" prefHeight="25.0" prefWidth="106.0" text="Show Movies" />
+	          
+	          
+	            <Pane layoutY="150.0" prefHeight="450.0" prefWidth="700.0">
+	               <children>
+	                  <TableView fx:id="viewTable" prefHeight="450.0" prefWidth="700.0">
+	                    <columns>
+	                      <TableColumn fx:id="movieIdCol" prefWidth="100.0" text="Movie ID" />
+	                      <TableColumn fx:id="titleCol" prefWidth="200.0" text="Title" />
+	                      <TableColumn fx:id="directorCol" prefWidth="200.0" text="Director" />
+	                      <TableColumn fx:id="yearCol" prefWidth="200.0" text="Year" />
+	                    </columns>
+	                  </TableView>
+	               </children>
+	            </Pane>
+			</children>
+		</Pane>
+   </children>
+</AnchorPane>

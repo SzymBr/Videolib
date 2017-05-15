@@ -1,0 +1,12 @@
+CREATE TABLE loans (loanid INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1), clientid INTEGER, movieid INTEGER, dateofloan date);
+
+
+ALTER TABLE loans ADD FOREIGN KEY movieid REFERENCES movies(movieid));
+
+
+ALTER TABLE loans ADD FOREIGN KEY (customerid) REFERENCES customers (customerid);
+
+CONSTRAINT login_userid_ref FOREIGN KEY (userid) REFERENCES usertable(userid)
+
+
+

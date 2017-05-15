@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.tab.LoansController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="700.0">
+         <children>
+				<Label layoutX="22.0" layoutY="22.0" text="Customer ID" />
+		        <TextField fx:id="customerId" layoutX="22.0" layoutY="45.0" prefHeight="25.0" prefWidth="120.0" />
+		        <Label fx:id="message" layoutX="22.0" layoutY="79.0" textFill="RED" />
+		         
+		        <Label layoutX="167.0" layoutY="22.0" text="Movie ID" />
+		        <TextField fx:id="movieId" layoutX="167.0" layoutY="45.0" prefHeight="25.0" prefWidth="120.0" />
+            
+	            <DatePicker fx:id="dateOfLoan" layoutX="313.0" layoutY="45.0" prefHeight="25.0" prefWidth="140.0" />
+	            <Label layoutX="313.0" layoutY="22.0" text="Date" />
+		         
+		          
+		        <Button fx:id="registerLoan" layoutX="473.0" layoutY="45.0" mnemonicParsing="false" onAction="#registerLoan" prefHeight="25.0" prefWidth="100.0" text="Register Loan" />
+		        <Button fx:id="showLoans" layoutX="580.0" layoutY="45.0" mnemonicParsing="false" onAction="#showLoans" prefHeight="25.0" prefWidth="106.0" text="Show Loans" />
+	          
+	          
+	            <Pane layoutY="150.0" prefHeight="450.0" prefWidth="700.0">
+	               <children>
+	                  <TableView fx:id="viewTable" prefHeight="450.0" prefWidth="700.0">
+	                    <columns>
+	                      <TableColumn fx:id="loanIdCol" prefWidth="100.0" text="Loan ID" />
+	                      <TableColumn fx:id="customerIdCol" prefWidth="200.0" text="Customer ID" />
+	                      <TableColumn fx:id="movieIdCol" prefWidth="200.0" text="Movie ID" />
+	                      <TableColumn fx:id="dateOfLoanCol" prefWidth="200.0" text="Date" />
+	                    </columns>
+	                  </TableView>
+	               </children>
+	            </Pane>
+			</children>
+		</Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="main.java.controllers.MainController">
+   <children>
+      <TabPane layoutX="122.0" layoutY="100.0" prefHeight="600.0" prefWidth="700.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Customers">
+               <content>
+                  <fx:include fx:id="customers" source="tabs/customers.fxml" />
+               </content>
+          </Tab>
+          <Tab text="Movies">
+               <content>
+                  <fx:include fx:id="movies" source="tabs/movies.fxml" />
+               </content>
+          </Tab>
+            <Tab text="Loans">
+               <content>
+                  <fx:include fx:id="loans" source="tabs/loans.fxml" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
